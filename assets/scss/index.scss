@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: Jost, Helvetica, sans-serif;
+}
+
+/*
+  Ínicio do ResetCSS
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}
+/*
+  Final do ResetCSS
+*/
+
+
+/* 
+  Ínicio do CSS referente ao banner principal
+*/
+
+.banner-home {
+  &__slides {
+    a {
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .swiper-pagination {
+    padding: 30px 0;
+    .swiper-pagination-bullet {
+      width: 135px;
+      border-radius: 0;
+      background-color: #fff;
+      opacity: 1;
+      height: 3px;
+      &.swiper-pagination-bullet-active {
+        background-color: #3C3C3C;
+      }
+    }
+  }
+}
+
+/* 
+  Fim do CSS referente ao banner principal
+*/
+
+/* 
+  Ínicio do CSS referente a showcases
+*/
+
+.showcase {
+  &.container-best {
+    padding-left: 212px;
+    .showcase__top-title {
+      padding: 0;
+    }
+  }
+  &__top-title {
+    padding: 0 60px;
+    display: flex;
+    align-items: baseline;
+    h3 {
+      font-size: 110px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #3C3C3C;
+      line-height: normal;
+    }
+    h5 {
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 20px;
+        color: #3C3C3C;
+      }
+    }
+  }
+  &__items {
+    align-items: baseline;
+    .item {
+      cursor: pointer;
+      img {
+        max-width: 100%;
+        &.heart-notch {
+          position: absolute;
+          top: 20px;
+          left: 38px;
+        }
+      }
+      a {
+        display: block;
+        color: #3c3c3c;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        opacity: 0;
+        border-top: 2px solid #3c3c3c;
+        transition: all ease .3s;
+      }
+      &.swiper-slide-active {
+        a {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__best {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 3px;
+        background-color: #8f8f8f;  
+        bottom: -38px;
+        left: 0;
+    }
+    .showcase__content--best {
+      &:after {
+        /* Style for "Fade" */
+        position: absolute;
+        content: "";
+        width: 492px;
+        height: 586px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+        top: 0;
+        right: 0;
+        z-index: 9;
+      }
+    }
+    .item {
+      border-right: 1px solid #eeeeee;
+      // padding-left: 38px;
+      max-width: 455px;
+      img {
+        border-bottom: 0;
+        margin-bottom: 80px;
+      }
+      &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+  &__custom {
+    display: flex;
+    padding: 0 60px;
+    padding-bottom: 70px;
+    align-items: flex-start;
+    .showcase__items {
+      margin-left: -5px;
+    }
+    &--rafa {
+      width: 100%;
+      max-width: 432px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 44px 0;
+      border: 1px solid #e5e5e5;
+      border-right: 0;
+      &__actions {
+        padding: 70px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      img {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+/* 
+  Fim do CSS referente a showcases
+*/
+
+/* 
+  Ínicio do CSS referente a Banners Subdestaque
+*/
+
+.banner-destaque {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  &__content {
+    a {
+      transition: ease .3s opacity;
+      img {
+        max-width: 100%;
+      }
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+}
+/* 
+  Fim do CSS referente a Banners Subdestaque
+*/
+
+/* 
+  Ínicio do CSS referente a Banners Notícias
+*/
+
+.notices {
+  padding: 100px 60px;
+  margin: 0 auto;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .notice {
+      text-decoration: none;
+      img {
+        transition: ease .3s opacity;
+      }
+      &:hover {
+        img {
+          opacity: .75;
+        }
+      }
+      h3 {
+        color: #3c3c3c;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+      }
+      h5 {
+        color: #666666;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* 
+  FIM do CSS referente a Banners Notícias
+*/
+
+/* 
+  Inicio do CSS referente a section Sizes
+*/
+
+.sizes {
+  &__title {
+    color: #3c3c3c;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+    .option {
+      color: #3c3c3c;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid #8f8f8f;
+      border-radius: 100%;
+      width: 82px;
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: ease .4s background-color;
+      &:hover {
+        background-color: #3C3C3C;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* 
+  FIM do CSS referente a section Sizes
+*/
+
+
+
+
+.instagram {
+  margin-top: 110px;
+  &__title {
+    color: #3c3c3c;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__posts {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30px;
+    .post {
+      min-width: 432px;
+      &:first-child {
+        margin-left: -150px;
+      }
+    }
+  }
+}
+
+
+
+.favorite {
+  padding-top: 130px;
+  max-width: 1220px;
+  margin: 0 auto;
+  &__title {
+    color: #3c3c3c;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+
+
+.benefits {
+  max-width: 1496px;
+  margin: 0 auto;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 0;
+    .benefit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 27px;
+      }
+      b {
+        color: #3c3c3c;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      span {
+        color: #666666;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+      }
+    }
+  }
+}

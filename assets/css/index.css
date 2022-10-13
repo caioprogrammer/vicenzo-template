@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+/* line 3, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+* {
+  font-family: Jost, Helvetica, sans-serif;
+}
+
+/*
+  Ínicio do ResetCSS
+*/
+/* line 10, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 34, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+img {
+  max-width: 100%;
+}
+
+/*
+  Final do ResetCSS
+*/
+/* 
+  Ínicio do CSS referente ao banner principal
+*/
+/* line 67, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-home__slides a img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 73, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-home .swiper-pagination {
+  padding: 30px 0;
+}
+
+/* line 75, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-home .swiper-pagination .swiper-pagination-bullet {
+  width: 135px;
+  border-radius: 0;
+  background-color: #fff;
+  opacity: 1;
+  height: 3px;
+}
+
+/* line 81, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-home .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #3C3C3C;
+}
+
+/* 
+  Fim do CSS referente ao banner principal
+*/
+/* 
+  Ínicio do CSS referente a showcases
+*/
+/* line 97, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase.container-best {
+  padding-left: 212px;
+}
+
+/* line 99, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase.container-best .showcase__top-title {
+  padding: 0;
+}
+
+/* line 103, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__top-title {
+  padding: 0 60px;
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 107, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__top-title h3 {
+  font-size: 110px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  line-height: normal;
+}
+
+/* line 115, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__top-title h5 a {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+  color: #3C3C3C;
+}
+
+/* line 123, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__items {
+  align-items: baseline;
+}
+
+/* line 125, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__items .item {
+  cursor: pointer;
+}
+
+/* line 127, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__items .item img {
+  max-width: 100%;
+}
+
+/* line 129, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__items .item img.heart-notch {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+}
+
+/* line 135, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__items .item a {
+  display: block;
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0;
+  border-top: 2px solid #3c3c3c;
+  transition: all ease .3s;
+}
+
+/* line 148, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__items .item.swiper-slide-active a {
+  opacity: 1;
+}
+
+/* line 154, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__best {
+  position: relative;
+}
+
+/* line 156, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__best:before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 3px;
+  background-color: #8f8f8f;
+  bottom: -38px;
+  left: 0;
+}
+
+/* line 166, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__best .showcase__content--best:after {
+  /* Style for "Fade" */
+  position: absolute;
+  content: "";
+  width: 492px;
+  height: 586px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+
+/* line 178, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__best .item {
+  border-right: 1px solid #eeeeee;
+  max-width: 455px;
+}
+
+/* line 182, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__best .item img {
+  border-bottom: 0;
+  margin-bottom: 80px;
+}
+
+/* line 186, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__best .item__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* line 193, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__custom {
+  display: flex;
+  padding: 0 60px;
+  padding-bottom: 70px;
+  align-items: flex-start;
+}
+
+/* line 198, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__custom .showcase__items {
+  margin-left: -5px;
+}
+
+/* line 201, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__custom--rafa {
+  width: 100%;
+  max-width: 432px;
+}
+
+/* line 205, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__custom .item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 44px 0;
+  border: 1px solid #e5e5e5;
+  border-right: 0;
+}
+
+/* line 212, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__custom .item__actions {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* line 218, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.showcase__custom .item img {
+  border-bottom: 0;
+}
+
+/* 
+  Fim do CSS referente a showcases
+*/
+/* 
+  Ínicio do CSS referente a Banners Subdestaque
+*/
+/* line 233, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-destaque {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* line 239, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-destaque__content a {
+  transition: ease .3s opacity;
+}
+
+/* line 241, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-destaque__content a img {
+  max-width: 100%;
+}
+
+/* line 244, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.banner-destaque__content a:hover {
+  opacity: .75;
+}
+
+/* 
+  Fim do CSS referente a Banners Subdestaque
+*/
+/* 
+  Ínicio do CSS referente a Banners Notícias
+*/
+/* line 258, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices {
+  padding: 100px 60px;
+  margin: 0 auto;
+}
+
+/* line 261, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 264, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices__content .notice {
+  text-decoration: none;
+}
+
+/* line 266, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices__content .notice img {
+  transition: ease .3s opacity;
+}
+
+/* line 270, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices__content .notice:hover img {
+  opacity: .75;
+}
+
+/* line 274, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices__content .notice h3 {
+  color: #3c3c3c;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+/* line 283, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.notices__content .notice h5 {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* 
+  FIM do CSS referente a Banners Notícias
+*/
+/* 
+  Inicio do CSS referente a section Sizes
+*/
+/* line 303, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.sizes__title {
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 311, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.sizes__options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* line 317, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.sizes__options .option {
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #8f8f8f;
+  border-radius: 100%;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease .4s background-color;
+}
+
+/* line 332, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.sizes__options .option:hover {
+  background-color: #3C3C3C;
+  color: #fff;
+}
+
+/* 
+  FIM do CSS referente a section Sizes
+*/
+/* line 347, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.instagram {
+  margin-top: 110px;
+}
+
+/* line 349, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.instagram__title {
+  color: #3c3c3c;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 357, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.instagram__posts {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* line 363, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.instagram__posts .post {
+  min-width: 432px;
+}
+
+/* line 365, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.instagram__posts .post:first-child {
+  margin-left: -150px;
+}
+
+/* line 374, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.favorite {
+  padding-top: 130px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* line 378, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.favorite__title {
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* line 387, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.favorite__subtitle {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+}
+
+/* line 397, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.benefits {
+  max-width: 1496px;
+  margin: 0 auto;
+}
+
+/* line 400, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.benefits__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 96px 0;
+}
+
+/* line 405, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.benefits__content .benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 409, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.benefits__content .benefit img {
+  margin-bottom: 27px;
+}
+
+/* line 412, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.benefits__content .benefit b {
+  color: #3c3c3c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* line 421, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
+.benefits__content .benefit span {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
