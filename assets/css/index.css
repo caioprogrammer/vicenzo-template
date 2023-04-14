@@ -208,6 +208,7 @@ img {
   top: 0;
   right: 0;
   z-index: 9;
+  pointer-events: none;
 }
 
 /* line 178, C:/Users/caiou/Desktop/Adventure.INC/vicenzo/assets/scss/index.scss */
@@ -513,3 +514,38 @@ img {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+@media screen and (max-width: 768px) {
+  .showcase__top-title h3 {
+    font-size: 36px;
+  }
+  .showcase.container-best {
+    padding-left: 16px;
+  }
+  .sizes__options {
+    flex-wrap: wrap;
+  }
+  .instagram__posts{
+    overflow: auto;
+  }
+  .benefits__content {
+    flex-direction: column;
+    gap: 16px
+  }
+  .showcase__custom {
+    display: block;
+    padding: 0 16px;
+  }
+  .showcase__top-title {
+    padding: 0 16px;
+  }
+  .notices__content, .banner-destaque, .showcase__custom {
+    flex-direction: column;
+  }
+  .notices {
+    padding: 80px 25px;
+  }
+  .showcase__best .showcase__content--best:after {
+    display: none;
+  }
+}
